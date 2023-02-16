@@ -9,7 +9,7 @@ const Filter = ({ movies, setFilteredMovies }) => {
       movies.filter(
         (movie) =>
           movie.title.toLowerCase().includes(titleFilter.toLowerCase()) &&
-          movie.rating >= ratingFilter
+          movie.rating == ratingFilter
       )
     );
   }, [movies, titleFilter, ratingFilter]);
